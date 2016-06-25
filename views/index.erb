@@ -2,7 +2,19 @@
   <head></head>
   <body>
     <p>
-      Why, hello there! <br> The SECRET NUMBER is <%= number %>
+      Why, hello there! <br> Can you guess the secret number? It's between 0 and 100.
+    </p>
+    <p>
+      Please enter your guess below.
+    </p>
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+    <p>
+      Your guess was <%= guess %>.
+      <br>
+      <%= message %>
     </p>
   </body>
 </html>
